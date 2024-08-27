@@ -1,0 +1,25 @@
+{
+  "name": "meeting-scheduler",
+  "version": "1.0.0",
+  "description": "- This app shows the free slots of an executive as per their google calendar so that clients can book meetings, and it has a dashboard for the admin to see all the meetings for an executive. - On running the app in browser (`/` route), users will get an option to sign in with Google and to give app permission to read/write to their google calender. - On signin, each user will get their custom calendar link `/calendar/:<user-id>` which can be shared with their clients - The client can select any date from the dropdown and see all the available meeting slots between 9 A.M. and 5 P.M. for that date.  - On selecting a slot, the client will be redirected to `/meeting/<user-id>?selectedDate=<date-string>`, where we show the success page and meeting details - Admins can go to `/admin/meetings` and select employee names from the dropdown to see all the scheduled meeting for that employee",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.19.2",
+    "googleapis": "^100.0.0",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
